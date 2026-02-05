@@ -8,6 +8,7 @@ You can query them through a FastAPI API. Answers are grounded in retrieved cont
 
 ## Project Structure
 
+```text
 email-rag-pro/
 ├── app/
 │   ├── __init__.py
