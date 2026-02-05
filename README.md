@@ -10,19 +10,19 @@ You can query them through a FastAPI API. Answers are grounded in retrieved cont
 
 email-rag-pro/
 ├── app/
-│   ├── **init**.py
-│   ├── main.py           FastAPI application
-│   ├── config.py         Environment configuration
-│   ├── embed.py          Vector DB setup
-│   ├── retrieve.py       Retrieval logic
-│   ├── prompt.py         Prompt engineering
-│   ├── llm.py            LLM client
-│   ├── chunk.py          Text chunking
-│   ├── schemas.py        API models
-│   └── extractors.py     Multi-format text extraction
+│   ├── __init__.py
+│   ├── main.py           # FastAPI application
+│   ├── config.py         # Environment configuration
+│   ├── embed.py          # Vector DB setup
+│   ├── retrieve.py       # Retrieval logic
+│   ├── prompt.py         # Prompt engineering
+│   ├── llm.py            # LLM client
+│   ├── chunk.py          # Text chunking
+│   ├── schemas.py        # API models
+│   └── extractors.py     # Multi-format text extraction
 ├── data/
-│   ├── emails/           Document storage (auto-created)
-│   └── index/            Vector DB + state (auto-created)
+│   ├── emails/           # Document storage (auto-created)
+│   └── index/            # Vector DB + state (auto-created)
 ├── test/
 │   ├── test_api.py
 │   ├── test_full_pipeline.py
@@ -31,11 +31,11 @@ email-rag-pro/
 │   ├── test_edge_cases.py
 │   ├── load_sample_data.py
 │   └── run_all_tests.py
-├── fetch_email.py        IMAP email fetcher
-├── watcher.py            File watcher and indexer
-├── requirements.txt      Python dependencies
-├── .env.example          Environment template
-└── README.md             This file
+├── fetch_email.py        # IMAP email fetcher
+├── watcher.py            # File watcher and indexer
+├── requirements.txt      # Python dependencies
+├── .env.example          # Environment template
+└── README.md             # This file
 
 ---
 
@@ -209,5 +209,8 @@ The response will include:
 10. A prompt is built using only these chunks.
 11. The language model generates an answer from this context using the configured LLM.
 12. The API returns the answer along with the source file names.
+
+
+
 
 
