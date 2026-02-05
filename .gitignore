@@ -1,0 +1,12 @@
+.env
+pycache/
+*.pyc
+data/emails/
+data/index/
+.chroma/
+.venv/
+venv/
+.env.local
+.DS_Store
+.idea/
+.vscode/

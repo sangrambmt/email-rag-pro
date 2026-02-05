@@ -1,0 +1,10 @@
+fastapi==0.115.0
+uvicorn==0.32.0
+pydantic==2.9.2
+python-dotenv==1.0.1
+openai==1.54.3
+chromadb==0.5.20
+tiktoken==0.8.0
+watchdog==6.0.0
+imapclient==3.0.0
+pyzmail36==1.0.5
